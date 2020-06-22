@@ -28,14 +28,14 @@ pprofplus用于采集Go进程的各项内存指标（包含Go runtime内存管�
 #### 1. 被监控的进程中添加以下代码：
 
 ```golang
-import "github.com/q191201771/pprofplus/pkg/pprofplus"
+import "github.com/admpub/pprofplus/pkg/pprofplus"
 
 pprofplus.Start()
 ```
 
-使用示例，以及更多个性化配置的方法见： [example/example.go](https://github.com/q191201771/pprofplus/blob/master/example/example.go)
+使用示例，以及更多个性化配置的方法见： [example/example.go](https://github.com/admpub/pprofplus/blob/master/example/example.go)
 
-支持的配置项见：[pprofplus.go](https://github.com/q191201771/pprofplus/blob/master/pkg/pprofplus/pprofplus.go#L13)
+支持的配置项见：[pprofplus.go](https://github.com/admpub/pprofplus/blob/master/pkg/pprofplus/pprofplus.go#L13)
 
 #### 2. 启动dashboard程序（web展示用，与被监控的进程在一台机器）：
 
